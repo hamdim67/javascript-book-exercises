@@ -1,0 +1,8 @@
+let foo = 'bar';
+{
+  let foo = 'qux';
+}
+
+console.log(foo);
+
+(The program will log 'bar' to the console, b/c 'qux' is block-scoped inside the braces, so we cannot access that value outside the braces on the global object when foo is reassigned to 'qux' in the block.)

@@ -1,0 +1,11 @@
+const NAME = 'Victor';
+console.log('Good Morning, ' + NAME);
+console.log('Good Afternoon, ' + NAME);
+console.log('Good Evening, ' + NAME);
+
+NAME = 'Joe';
+console.log('Good Morning, ' + NAME);
+console.log('Good Afternoon, ' + NAME);
+console.log('Good Evening, ' + NAME);
+
+(Running this code throws an error, b/c you're attempting to reassign a 'constant' after defining it, which is not possible)

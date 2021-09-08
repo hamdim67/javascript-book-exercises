@@ -1,0 +1,8 @@
+const FOO = 'bar';
+{
+  const FOO = 'qux';
+}
+
+console.log(FOO);
+
+(Same explanation as 'let' variables. Console logs teh value 'bar' for 'FOO' variable, since the 2 const variables are separate entities. The const variable defined within the braces is block-scoped inside the braces, so cannot be accessed outside of it. So, console logs the other const variable since it is globally scoped and visible in the global object. )
