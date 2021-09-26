@@ -1,10 +1,10 @@
 function say(words) {
-  console.log(words);
+	console.log(words);
 }
 
-say('hello')
-say('hi')
-say('how are you')
+say('hello');
+say('hi');
+say('how are you');
 say("I'm fine");
 
 // Shortcut to comment out code: Ctrl + k + c
@@ -14,5 +14,3 @@ say("I'm fine");
 // }
 
 // let sum = add(3, 6); // 3 and 6 are arguments
-
-
