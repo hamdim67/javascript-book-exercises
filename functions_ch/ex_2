@@ -1,0 +1,28 @@
+//  ////Exercise 2 (Function chapter) (make a function that
+// that asks for user's first and last name in
+//separate invocations, returning name as a string)
+
+
+
+function greeter (fName, lName) {
+    return `Hello, ${fName} ${lName}`
+}
+
+
+let fName = prompt('What is your first name?');
+let lName = prompt('What is your first name?');
+
+
+greeter(fName, lName);
+
+//***Note: You CANNOT use 'prompt' in nodejs. It only works in the brower
+//That's what 'rlSync' is for in nodejs */
+
+//Here, I made 'fName' and 'lName' variables, which get user's 
+//first and last name through a prompt. Then in the 'greeter' function
+//I passed in those variables that I turned into prompts as parameters to the function. 
+//And then I returned the 'fName' and 'lName' variables from that function
+//as the statement 'Hello, fName lName'
+
+//And then in the last part, I called the 'greeter' function 
+//by passing in the 'fName' and 'lName' variables as parameters

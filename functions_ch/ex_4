@@ -1,0 +1,19 @@
+function scream(words) {
+  words = words + '!!!!';
+  return;
+  console.log(words);
+}
+
+scream('Yipeee');
+
+//This doesn't log anything to the console
+//b/c the function returns immediately
+//after the return statement before we 
+//console.log the result of 'words' variable
+
+//**In non-strict mode, 'words' variable that
+//isn't declared w/ 'let' or 'const' does NOT
+//throw an error b/c we created an 'Implicit'
+//global variabled on the global object. 
+//We technically didn't create a variable;
+//we actually created a property on the global window object

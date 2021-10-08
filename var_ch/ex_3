@@ -1,0 +1,8 @@
+{
+  let foo = 'bar';
+}
+
+console.log(foo);
+
+(It outputs an error since foo is defined inside the block and we cannot access foo outside of the block because it is out of scope.
+The 'let' statement creates variables with block scope, so we cannot access on the global object because, outside of the block, 'foo' does not exist)

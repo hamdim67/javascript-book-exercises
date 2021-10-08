@@ -1,0 +1,48 @@
+let bar = 1;
+function foo() {
+  let bar = 2;
+}
+
+foo();
+console.log(bar);
+
+//This logs '1' to the console since the variable 'bar' inside the function is scoped to the function and not acceissible outside of it. 
+//So, when we console.log(bar) outside of the function, we use the 'bar' variable that was declared on the global scope, which has a value of 1;
+
+let bar = 1;
+function foo() {
+  bar = 2;
+}
+
+foo();
+console.log(bar);
+
+//Here, '2' would be logged to the console since 'bar' inside the function is NOT declared with 'let' or 'const', 
+//which does not create a new scope and so, value of 'bar' is just reassigned to '2'
+
+//Function scope vs. Global scope (changes based on if a variable is 'declared' using 'let' or 'const')
+
+//More examples of this
+
+// // Simple variable declared globally
+// var simpleGlobal = "Simple variable declared globally";
+
+// // Variable not declared so belongs to its global scope
+// notDeclaredGlobal = "Not declared globally so treated as global scope";
+
+// function foo() {
+//     // Variable not declared so belongs to its global scope
+//     notDeclaredInsideFunction = "Not declared inside function so treated as global scope";
+//     // Variable is defined in global scope when assigned as window property
+//     // window.anyWindowGlobalProperty = "Global variable defined as window property";
+  
+//     alert("Inside function");
+//     alert(simpleGlobal);
+//     alert(notDeclaredGlobal);
+//     alert(notDeclaredInsideFunction);
+// }
+// foo();
+// alert("Outside function");
+// // Below alert is only valid if foo(where notDeclaredInsideFunction get declared automatically) is called.
+// alert(foo);
+// alert(anyWindowGlobalProperty)

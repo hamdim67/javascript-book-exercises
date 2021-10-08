@@ -1,0 +1,16 @@
+Identify the constructors for each of the following methods and cliassfy each method as either a 'Static' or a 'Prototype' method
+a. substring
+  Constructor: String
+  Prototype method
+b. create
+  Constructor: Object, 
+  Static method
+c. fromCharCode
+  Constructor: String, 
+  Static method
+d. slice
+  Constructor: String, Array,  
+  Prototype method
+e. toString
+  Constructor: String, Number, Array, Objec
+  Prototype method

@@ -1,0 +1,9 @@
+function scream(words) {
+  return words + '!!!!';
+}
+
+scream('Yipeee');
+
+//This returns 'Yipeee!!!!' but it doesn't do 
+//anything with it since we didn't add 'console.log to the
+//return statement so it doesn't log it to the console
