@@ -25,3 +25,6 @@ function factorial(number) {
 
 console.log(factorial(6));
 console.log(factorial(4));
+
+
+
