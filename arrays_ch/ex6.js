@@ -12,8 +12,8 @@ function oddLengths(arr) {
     let lengths = arr.map((val) => val.length);
     //2nd step is discard even values
     //So use filter to filter out even values
-    let oddLengths = lengths.filter((length) => {
-        return !(length % 2 === 0)
+    let oddLengths = lengths.filter((number) => {
+        return !(number % 2 === 0)
     })
     return oddLengths;
 }
