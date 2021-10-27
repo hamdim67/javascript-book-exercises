@@ -43,20 +43,23 @@ let objToCopy = {
 // obj1 = same; 
 // obj2 = {color: "red", name: "cindy"}; 
 
-function copyObj (obj, keys) {
-  let destinationObj = {}; 
+function copyObj(obj, keys) {
+  let destinationObj = {};
   if (keys) {
-    keys.forEach(function(key) {
-      destinationObj[key] = obj[key]
-    }); 
-    
-    return destinationObj; 
-    } else {
-      return Object.assign(destinationObj, obj)
-    }
-}; 
+    keys.forEach(function (key) {
 
-console.log(copyObj(objToCopy)); 
+      //Here, we say for each key, set its value in destinationObj
+      //to the value in obj's key
+      destinationObj[key] = obj[key]
+    });
+
+    return destinationObj;
+  } else {
+    return Object.assign(destinationObj, obj)
+  }
+};
+
+console.log(copyObj(objToCopy));
 
 console.log(copyObj(objToCopy, ['foo', 'bar']));
 
