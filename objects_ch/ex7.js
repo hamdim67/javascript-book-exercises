@@ -7,8 +7,6 @@ let myObj = Object.create(myProtoObj);
 myObj.qux = 3; 
 console.log(myObj);
 
-
-
 //What will the below code return without running it?
 
 
